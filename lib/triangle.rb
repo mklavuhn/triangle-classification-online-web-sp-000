@@ -6,7 +6,7 @@ class Triangle
   
   def initialize(length_one, length_two, length_three)
     @lengths = [length_one, length_two, length_three]
-    @lenghts.sort
+    @lengths.sort!
   end
   
   
