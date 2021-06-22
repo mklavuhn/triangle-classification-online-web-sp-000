@@ -8,7 +8,6 @@ class Triangle
     @lengths = [length_one, length_two, length_three]
   end
   
-  end
   
   def kind 
     if @sides.any?{|side| side <= 0} || ((@sides[0] + @sides[1]) <= @sides[2])
@@ -21,8 +20,8 @@ class Triangle
       :scalene
     end
   end
-    
-    
+  
+  
   
   
 end
