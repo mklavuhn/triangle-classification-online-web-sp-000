@@ -5,13 +5,15 @@ class Triangle
   @lengths = []
   
   def initialize(length_one:, length_two:, length_three:)
-    @lengths = [length_one
+    @lengths = [length_one, length_two, length_three]
+  end
   
   end
   
   def kind 
-    if length_three == length_two == length_one
-      equilateral
+    
+  end
+    
     
   
   
