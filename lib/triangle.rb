@@ -10,11 +10,11 @@ class Triangle
   
   
   def kind 
-    if @sides.any?{|side| side <= 0} || ((@sides[0] + @sides[1]) <= @sides[2])
+    if @lengths.any?{|side| side <= 0} || ((@lengths[0] + @lengths[1]) <= @lengths[2])
       raise TriangleError
-    elsif @sides.uniq.length == 1
+    elsif @lengths.uniq.length == 1
       :equilateral
-    elsif @sides.uniq.length == 2
+    elsif @lengths.uniq.length == 2
       :isosceles
     else
       :scalene
